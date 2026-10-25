@@ -1,19 +1,33 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Terms of Use — All Here</title><style>
+<html lang="en" data-lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Terms of Use — All Here</title>
+<style>
 :root{color-scheme:light dark}
 body{font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text",Helvetica,Arial,sans-serif;max-width:720px;margin:0 auto;padding:32px 20px 64px;color:#0c0d12;background:#f3f4f8}
 @media(prefers-color-scheme:dark){body{color:#f5f5f7;background:#000}a{color:#6ea0ff}}
 h1{font-size:32px;letter-spacing:-.6px;margin:.2em 0}h2{font-size:20px;margin:1.6em 0 .3em}
 .muted{opacity:.62;font-size:14px}a{color:#2e6bff}nav a{margin-right:16px}
-</style></head><body>
+.bar{display:flex;justify-content:flex-end;margin-bottom:8px}
+.lang{font:inherit;font-size:14px;font-weight:600;border:0;border-radius:999px;padding:7px 14px;background:rgba(46,107,255,.12);color:#2e6bff;cursor:pointer}
+@media(prefers-color-scheme:dark){.lang{background:rgba(110,160,255,.18);color:#6ea0ff}}
+[data-l]{display:none}
+html[data-lang=en] [data-l=en],html[data-lang=ru] [data-l=ru]{display:revert}
+</style>
+</head><body>
 <nav><a href="index.html">All Here</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
-<h1>Terms of Use</h1>
-<p class="muted">Last updated: October 25, 2026</p>
-<h2>Service</h2><p>The app helps you save and sort notes and links, log workouts and track spending. Sphere suggestions can be wrong — double-check what matters.</p>
-<h2>Your content</h2><p>Everything you save stays yours. You are responsible for having the rights to the material you save.</p>
-<h2>Workouts and finance</h2><p>Workout and spending records are for reference only. They do not replace advice from a doctor, trainer or financial professional.</p>
-<h2>Data safety</h2><p>Your data is stored on your device. Back up your device: if you lose or reset your phone, the app’s data may be lost.</p>
-<h2>Changes</h2><p>We may update these terms. We will announce material changes in the app.</p>
-<h2>Contact</h2><p><a href="mailto:s.matthew.working@gmail.com">s.matthew.working@gmail.com</a></p>
+<div class="bar"><button class="lang" id="lang" type="button">Русский</button></div>
+<h1 data-l="en">Terms of Use</h1><h1 data-l="ru">Условия использования</h1>
+<p data-l="en" class="muted">Last updated: October 25, 2026</p><p data-l="ru" class="muted">Обновлено 25 октября 2026</p>
+<h2 data-l="en">Service</h2><h2 data-l="ru">Сервис</h2><p data-l="en">The app helps you save and sort notes and links, log workouts and track spending. Sphere suggestions can be wrong — double-check what matters.</p><p data-l="ru">Приложение помогает сохранять и раскладывать заметки и ссылки, вести тренировки и учитывать траты. Подсказки сфер могут ошибаться — проверяй важное.</p>
+<h2 data-l="en">Your content</h2><h2 data-l="ru">Твой контент</h2><p data-l="en">Everything you save stays yours. You are responsible for having the rights to the material you save.</p><p data-l="ru">Всё, что ты сохраняешь, остаётся твоим. Ты отвечаешь за то, чтобы у тебя были права на сохранённые материалы.</p>
+<h2 data-l="en">Workouts and finance</h2><h2 data-l="ru">Тренировки и финансы</h2><p data-l="en">Workout and spending records are for reference only. They do not replace advice from a doctor, trainer or financial professional.</p><p data-l="ru">Записи о тренировках и тратах носят справочный характер. Они не заменяют консультацию врача, тренера или финансового специалиста.</p>
+<h2 data-l="en">Data safety</h2><h2 data-l="ru">Сохранность данных</h2><p data-l="en">Your data is stored on your device. Back up your device: if you lose or reset your phone, the app’s data may be lost.</p><p data-l="ru">Данные хранятся на твоём устройстве. Делай резервные копии устройства: при потере или сбросе телефона данные приложения могут быть потеряны.</p>
+<h2 data-l="en">Changes</h2><h2 data-l="ru">Изменения</h2><p data-l="en">We may update these terms. We will announce material changes in the app.</p><p data-l="ru">Мы можем обновлять условия. О существенных изменениях сообщим в приложении.</p>
+<h2 data-l="en">Contact</h2><h2 data-l="ru">Связаться</h2><p><a href="mailto:s.matthew.working@gmail.com">s.matthew.working@gmail.com</a></p>
+<script>
+(function(){var q=new URLSearchParams(location.search).get('lang');
+var l=(q==='ru'||q==='en')?q:((navigator.language||'en').toLowerCase().indexOf('ru')===0?'ru':'en');
+function set(x){document.documentElement.setAttribute('data-lang',x);document.documentElement.lang=x;document.getElementById('lang').textContent=x==='ru'?'English':'Русский';}
+set(l);document.getElementById('lang').onclick=function(){set(document.documentElement.getAttribute('data-lang')==='ru'?'en':'ru');};})();
+</script>
 </body></html>
