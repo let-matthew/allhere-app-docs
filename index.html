@@ -1,14 +1,32 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>All Here — All Here</title><style>
-:root{color-scheme:light dark}
-body{font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text",Helvetica,Arial,sans-serif;max-width:720px;margin:0 auto;padding:32px 20px 64px;color:#0c0d12;background:#f3f4f8}
-@media(prefers-color-scheme:dark){body{color:#f5f5f7;background:#000}a{color:#6ea0ff}}
-h1{font-size:32px;letter-spacing:-.6px;margin:.2em 0}h2{font-size:20px;margin:1.6em 0 .3em}
-.muted{opacity:.62;font-size:14px}a{color:#2e6bff}nav a{margin-right:16px}
-</style></head><body>
-<nav><a href="index.html">All Here</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
-<h1>All Here</h1>
-<p>A notes app for iPhone: save anything from any app with Share, sort it into spheres, log workouts and track spending. Everything stays on your device.</p>
-<p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a></p>
-</body></html>
+<html lang="en" data-lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>All Here — All Here</title><link rel="icon" href="assets/logo-en.png"><style>
+:root{color-scheme:light dark;--bg:#f3f4f8;--card:#fff;--tx:#0c0d12;--tx2:#5b5f6e;--ac:#2e6bff;--ac2:rgba(46,107,255,.12);--sh:0 8px 30px rgba(31,44,110,.08)}
+@media(prefers-color-scheme:dark){:root{--bg:#000;--card:#1c1c1f;--tx:#f5f5f7;--tx2:#a1a4b0;--ac:#6ea0ff;--ac2:rgba(110,160,255,.18);--sh:none}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text",Helvetica,Arial,sans-serif;color:var(--tx);background:var(--bg);background-image:radial-gradient(900px 380px at 50% -120px,rgba(110,160,255,.28),transparent)}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px 56px}
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.brand{margin-right:auto;display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.3px;color:var(--tx);text-decoration:none}
+.brand img{width:40px;height:40px;border-radius:10px;box-shadow:0 4px 12px rgba(46,91,255,.25)}
+nav{display:flex;gap:4px;flex-wrap:wrap;order:3;width:100%}
+nav a{color:var(--tx2);text-decoration:none;font-size:15px;font-weight:600;padding:6px 12px;border-radius:999px}
+nav a.on,nav a:hover{background:var(--ac2);color:var(--ac)}
+.lang{order:2;font:inherit;font-size:14px;font-weight:700;border:0;border-radius:999px;padding:7px 14px;background:var(--ac2);color:var(--ac);cursor:pointer}
+.card{background:var(--card);border-radius:28px;padding:28px 26px;box-shadow:var(--sh)}
+h1{font-size:clamp(25px,7.2vw,34px);overflow-wrap:anywhere;letter-spacing:-.8px;line-height:1.15;margin:0 0 6px}
+h2{font-size:19px;margin:1.7em 0 .25em;letter-spacing:-.2px}
+p{margin:.4em 0;color:var(--tx)}.muted{color:var(--tx2);font-size:14px}
+a{color:var(--ac)}
+.hero{text-align:center;padding:36px 20px 28px}.hero img{width:112px;height:112px;border-radius:26px;box-shadow:0 14px 34px rgba(46,91,255,.35)}
+.hero h1{font-size:clamp(30px,9vw,40px);margin-top:18px}.hero p{color:var(--tx2);font-size:18px;max-width:520px;margin:10px auto}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:22px}
+.links a{display:block;text-align:center;text-decoration:none;font-weight:700;padding:14px;border-radius:18px;background:var(--ac2);color:var(--ac)}
+footer{margin-top:22px;text-align:center;color:var(--tx2);font-size:13px}
+[data-l]{display:none}
+html[data-lang=en] [data-l=en],html[data-lang=ru] [data-l=ru]{display:revert}
+</style></head><body><div class="wrap"><header class="top"><a class="brand" href="index.html"><img data-l="en" src="assets/logo-en.png" alt=""><img data-l="ru" src="assets/logo-ru.png" alt=""><span data-l="en">All Here</span><span data-l="ru">Всё тут</span></a><nav><a href="index.html" class="on"><span data-l="en">All Here</span><span data-l="ru">Главная</span></a><a href="privacy.html"><span data-l="en">Privacy Policy</span><span data-l="ru">Политика</span></a><a href="terms.html"><span data-l="en">Terms</span><span data-l="ru">Условия</span></a><a href="support.html"><span data-l="en">Support</span><span data-l="ru">Поддержка</span></a></nav><button class="lang" id="lang" type="button">Русский</button></header><main class="card hero"><img data-l="en" src="assets/logo-en.png" alt="All Here"><img data-l="ru" src="assets/logo-ru.png" alt="Всё тут"><h1 data-l="en">All Here</h1><h1 data-l="ru">Всё тут</h1><p data-l="en">A notes app for iPhone: save anything from any app with Share, sort it into spheres, log workouts and track spending. Everything stays on your device.</p><p data-l="ru">Приложение для заметок на iPhone: сохраняй что угодно из любых приложений через «Поделиться», раскладывай по сферам, веди тренировки и учитывай траты. Всё остаётся на твоём устройстве.</p><div class="links"><a href="privacy.html"><span data-l="en">Privacy Policy</span><span data-l="ru">Политика</span></a><a href="terms.html"><span data-l="en">Terms of Use</span><span data-l="ru">Условия</span></a><a href="support.html"><span data-l="en">Support</span><span data-l="ru">Поддержка</span></a></div></main><footer>© All Here</footer><script>
+(function(){var q=new URLSearchParams(location.search).get('lang');
+var l=(q==='ru'||q==='en')?q:((navigator.language||'en').toLowerCase().indexOf('ru')===0?'ru':'en');
+function set(x){var h=document.documentElement;h.setAttribute('data-lang',x);h.lang=x;document.getElementById('lang').textContent=x==='ru'?'English':'Русский';}
+set(l);document.getElementById('lang').onclick=function(){set(document.documentElement.getAttribute('data-lang')==='ru'?'en':'ru');};})();
+</script></div></body></html>
