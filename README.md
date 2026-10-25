@@ -34,4 +34,4 @@ We may update this policy; the date above will change.
 
 ---
 
-[Terms of Use](terms.html) · [Support](support.html)
+[Website](https://let-matthew.github.io/allhere-app-docs/) · [Privacy Policy](https://let-matthew.github.io/allhere-app-docs/privacy.html) · [Terms of Use](https://let-matthew.github.io/allhere-app-docs/terms.html) · [Support](https://let-matthew.github.io/allhere-app-docs/support.html)
