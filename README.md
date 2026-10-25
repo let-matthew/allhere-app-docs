@@ -31,3 +31,7 @@ We may update this policy; the date above will change.
 
 ## Contact
 [s.matthew.working@gmail.com](mailto:s.matthew.working@gmail.com)
+
+---
+
+[Terms of Use](terms.html) · [Support](support.html)
