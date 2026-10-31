@@ -1,6 +1,6 @@
 # All here — Docs
 
-Public pages for the **All here** iOS app (notes, links, workouts and finance in one place; everything stays on your device).
+Public pages for the **All here** iOS app (quick daily actions: notes, saved links, workouts and spending in one place; everything stays on your device).
 
 - [Website](https://let-matthew.github.io/allhere-app-docs/)
 - [Privacy Policy](https://let-matthew.github.io/allhere-app-docs/privacy.html)
